@@ -6,8 +6,8 @@
     <ul>
     <li></li>
     </ul>
-    <div v-for="(item, key) in newsListShow" :key="key">
-      <div>{{item.author_name}}</div>
+    <div v-for="(item, key) in newsListShow" :key="key" class="con">
+      <div class="son">{{item.author_name}}</div>
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h1, h2 {
   font-weight: normal;
 }
@@ -61,5 +61,10 @@ li {
 }
 a {
   color: #42b983;
+}
+.con{
+  .son{
+    border: 1px solid red;
+  }
 }
 </style>
