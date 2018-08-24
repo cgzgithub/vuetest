@@ -5,16 +5,20 @@ import App from './App'
 import router from './router'
 import Vuex from 'vuex'
 import store from './store/store'
+import actions from './store/action'
+import axios from 'axios'
 Vue.use(Vuex)
 
 Vue.config.productionTip = false
+Vue.prototype.$http= axios
+require('./mock.js')
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
+  actions,
   components: { App },
-  
   template: '<App/>'
 })
