@@ -64,7 +64,8 @@ a {
 }
 .con{
   .son{
-    border: 1px solid red;
+    border: 1px solid #eee;
+    width: 5rem;
   }
 }
 </style>
