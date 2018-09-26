@@ -27,15 +27,15 @@ export default {
 
  computed: {},
 
- mounted: {},
 
  methods: {
      handleSelect (key, keyPath) {
          this.$emit('update:active', key)
+
      }
  }
 }
 
 </script>
-<style lang=‘scss‘ scoped>
+<style lang="scss" scoped>
 </style>

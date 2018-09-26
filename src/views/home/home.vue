@@ -11,11 +11,30 @@ export default {
 
  components: {},
 
- computed: {},
+ computed: {
+     
+ },
+ created() {
+    this.setNewsApi();
 
- mounted: {},
+  },
 
- methods: {}
+ methods: {
+     setNewsApi: function() {
+       this.$http({
+        method: 'get',
+        url: "http://localhost:8080/getUser",
+        data: {}
+     }).then(res => {
+       console.log('res',res)
+     })
+      // api.JH_news('/news/index', 'type=top&key=123456')
+      // .then(res => {
+      //   console.log(res);
+      //   this.newsListShow = res.articles;
+      // });
+    },
+ }
 }
 
 </script>

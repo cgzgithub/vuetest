@@ -21,7 +21,7 @@ export default {
      active (newVal) {
          console.log(newVal)
          this.$router.push({
-             path: '${this.active}'
+             path: this.active
          })
      }
 
@@ -29,11 +29,10 @@ export default {
 
  computed: {},
 
- mounted: {},
 
  methods: {}
 }
 
 </script>
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 </style>
