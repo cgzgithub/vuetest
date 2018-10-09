@@ -13,7 +13,11 @@ export default new Router({
     },
     {
       path: '/login',
-      component: resolve => require(['@/views/login/login'], resolve)
+      component: resolve => require(['@/views/index/index'], resolve)
+    },
+    {
+      path: '/register',
+      component: resolve => require(['@/views/register/register'], resolve)
     },
     {
       path: '/index',

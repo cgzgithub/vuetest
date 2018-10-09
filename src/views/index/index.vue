@@ -19,21 +19,20 @@ export default {
  },
  watch: {
      active (newVal) {
-         console.log(newVal)
          this.$router.push({
-             path: '${this.active}'
+             path: this.active
          })
      }
 
- },
+ }
 
- computed: {},
+//  computed: {},
 
- mounted: {},
+//  mounted: {},
 
- methods: {}
+//  methods: {}
 }
 
 </script>
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 </style>

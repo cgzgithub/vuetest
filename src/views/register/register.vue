@@ -1,5 +1,7 @@
 <template>
- <div>resgister</div>
+ <div>resgister
+     <span @click="goto">back</span>
+ </div>
 </template>
 
 <script>
@@ -9,13 +11,17 @@ export default {
  };
  },
 
- components: {},
+//  components: {},
 
- computed: {},
+//  computed: {},
 
- mounted: {},
+//  mounted: {},
 
- methods: {}
+ methods: {
+     goto() {
+         this.$router.push('index')
+     }
+ }
 }
 
 </script>

@@ -5,6 +5,7 @@
          <el-menu-item index="home">home</el-menu-item>
          <el-menu-item index="about">about</el-menu-item>
          <el-menu-item index="set">set</el-menu-item>
+         <el-menu-item index="register">register</el-menu-item>
          
      </el-menu>
  </div>
@@ -23,11 +24,11 @@ export default {
  };
  },
 
- components: {},
+//  components: {},
 
- computed: {},
+//  computed: {},
 
- mounted: {},
+//  mounted: {},
 
  methods: {
      handleSelect (key, keyPath) {
@@ -37,5 +38,5 @@ export default {
 }
 
 </script>
-<style lang=‘scss‘ scoped>
+<style lang="scss" scoped>
 </style>
