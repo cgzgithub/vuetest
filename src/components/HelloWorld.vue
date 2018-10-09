@@ -17,7 +17,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 's',
       newsListShow:[]
     }
   },
@@ -30,11 +30,11 @@ export default {
     setNewsApi: function() {
        this.$http({
         method: 'post',
-        url: '/news/index',
+        url: 'http://localhost:8080/getUser',
         data: {}
      }).then(res => {
        console.log(res)
-          this.newsListShow = res.data.articles;
+          this.newsListShow = res.data.name;
      })
       // api.JH_news('/news/index', 'type=top&key=123456')
       // .then(res => {
